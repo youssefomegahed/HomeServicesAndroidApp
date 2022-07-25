@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.home.HomeFragment">
+
+
+    <TableRow
+        android:id="@+id/tablerow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logout"
+        tools:layout_editor_absoluteY="48dp">
+
+        <ImageView
+            android:id="@+id/carpenterimage"
+            android:layout_width="138dp"
+            android:layout_height="147dp"
+            android:clickable="true"
+            android:src="@drawable/carpenter_logo" />
+
+        <ImageView
+            android:id="@+id/electrician_image"
+            android:layout_width="138dp"
+            android:layout_height="147dp"
+            android:clickable="true"
+            android:src="@drawable/electrician_logo2" />
+
+        <ImageView
+            android:id="@+id/plumber_image"
+            android:layout_width="136dp"
+            android:layout_height="147dp"
+            android:clickable="true"
+            android:src="@drawable/plumber_logo2" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tablerow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tablerow1">
+
+        <ImageView
+            android:id="@+id/gardner_image"
+            android:layout_width="139dp"
+            android:layout_height="131dp"
+            android:clickable="true"
+            android:src="@drawable/gardener_logo" />
+
+        <ImageView
+            android:id="@+id/nanny_image"
+            android:layout_width="136dp"
+            android:layout_height="131dp"
+            android:clickable="true"
+            android:src="@drawable/nanny_logo2" />
+
+        <ImageView
+            android:id="@+id/housekeeping_image"
+            android:layout_width="135dp"
+            android:layout_height="131dp"
+            android:clickable="true"
+            android:src="@drawable/housekeeping_logo" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tablerow2">
+
+        <ImageView
+            android:id="@+id/cook_image"
+            android:layout_width="138dp"
+            android:layout_height="121dp"
+            android:clickable="true"
+            android:src="@drawable/cook_logo2" />
+
+        <ImageView
+            android:id="@+id/painter_image"
+            android:layout_width="138dp"
+            android:layout_height="121dp"
+            android:clickable="true"
+            android:src="@drawable/painter_logo2" />
+
+        <ImageView
+            android:id="@+id/ac_image"
+            android:layout_width="137dp"
+            android:layout_height="121dp"
+            android:clickable="true"
+            android:src="@drawable/ac_repair_logo" />
+    </TableRow>
+
+    <ImageView
+        android:id="@+id/logout"
+        android:layout_width="51dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/logout"
+        app:layout_constraintBottom_toTopOf="@+id/tablerow1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
